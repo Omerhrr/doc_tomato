@@ -17,7 +17,7 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 # Function to analyze image
 def analyze_image(image):
     response = model.generate_content([
-        "Analyze this image and identify if there's any pest or disease affecting the tomato plant. If a pest or disease is detected, provide its name, the organism that caused it, description, and mitigation steps. If it's not a tomato plant, respond with 'This model only targets tomato pests'. Include any other relevant information about factors affecting tomatoes.",
+        "Analyze this image and identify if there's any pest or disease affecting the tomato plant. If a pest or disease is detected, provide its name, the organism that caused it, description, and mitigation steps. If it's not a tomato plant, respond with 'This model only targets tomato pests'. Include any other relevant information about factors affecting tomatoes. **Note: be sure, precise and accurate, stick to your answer**",
         image
     ])
     return response.text
