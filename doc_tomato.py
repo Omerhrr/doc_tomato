@@ -9,7 +9,8 @@ from io import BytesIO
 st.set_page_config(page_title="Doctor Tomato", page_icon="🍅", layout="wide")
 
 # Configure the Google Gemini API
-genai.configure(api_key='AIzaSyDrsZmufmokYwsxK5MLypkdSB6SPdioHAo')
+genai.configure(api_key='AIzaSyBqnaGfXybghXQyjcuKRdpuLRijw95VBHs'
+
 
 # Set up the model
 model = genai.GenerativeModel('gemini-1.5-flash')
