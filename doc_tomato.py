@@ -9,11 +9,11 @@ from io import BytesIO
 st.set_page_config(page_title="Doctor Tomato", page_icon="🍅", layout="wide")
 
 # Configure the Google Gemini API
-genai.configure(api_key='AIzaSyBqnaGfXybghXQyjcuKRdpuLRijw95VBHs'
+genai.configure(api_key='AIzaSyBqnaGfXybghXQyjcuKRdpuLRijw95VBHs')
 
 
 # Set up the model
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 # Function to analyze image
 def analyze_image(image):
